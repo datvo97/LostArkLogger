@@ -8,9 +8,9 @@ namespace LostArkLogger
         {
             SourceId = reader.ReadUInt64();
             SkillEffectId = reader.ReadUInt32();
+            b_0 = reader.ReadByte();
             SkillId = reader.ReadUInt32();
             skillDamageEvents = reader.ReadList<SkillDamageEvent>();
-            b_0 = reader.ReadByte();
         }
     }
 }

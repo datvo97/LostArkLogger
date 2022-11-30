@@ -7,9 +7,9 @@ namespace LostArkLogger
         public void SteamDecode(BitReader reader)
         {
             bytearray_1 = reader.ReadBytes(1);
-            SourceId = reader.ReadUInt64();
-            bytearray_2 = reader.ReadBytes(0);
             TargetId = reader.ReadUInt64();
+            bytearray_2 = reader.ReadBytes(0);
+            SourceId = reader.ReadUInt64();
             bytearray_0 = reader.ReadBytes(6);
         }
     }
